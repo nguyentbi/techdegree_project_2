@@ -1,0 +1,257 @@
+
+/* General css                                               */
+* {
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  font-family: 'Maven Pro', sans-serif;
+  background-color: #ddd;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #aaa;
+}
+
+.container {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#name {
+  color: darkblue;
+}
+
+
+/*     main-content/header                                    */
+
+.main-content {
+  height: 70%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content ul li a {
+  display: block;
+  margin: 5px 0;
+  padding: 5px;
+  background-color: white;
+  font-weight: bold;
+}
+
+.main-content img {
+  width: 50%;
+  margin: 1.5rem 0 .5rem;
+}
+
+.main-content p {
+  padding: .5em ;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/*     secondary-content                                  */
+
+.secondary-content {
+  background-color: white;
+  margin: 0 -1em;
+}
+
+.secondary-content h2 {
+  padding: 3em 0 1em;
+  font-size: 1rem;
+}
+
+.secondary-content img {
+  width: 90%;
+}
+
+.secondary-content h3 {
+  margin-bottom: 0;
+}
+
+.secondary-content p {
+  padding: .5em 1rem 1rem;
+  margin-top: 0;
+}
+
+/*     contact-info                                    */
+
+.contact-info {
+  margin-top: 2.5rem;
+}
+
+.contact-info p {
+  padding: 0 1rem 1rem;
+  margin-bottom: .5rem;
+}
+
+.contact-info ul {
+  margin-bottom: 2rem;
+}
+
+.contact-info li {
+  margin-bottom: .5rem;
+}
+
+/*     footer                                   */
+
+footer {
+  border-top: 1px solid #aaa;
+}
+
+.mobile-nav ul{
+  display: flex
+}
+
+.mobile-nav .bottom-name {
+  margin-right: auto;
+}
+
+.bottom-main-nav {
+  display: none;
+}
+
+
+
+/*     media queries                                   */
+
+@media (min-width: 768px) {
+
+  /*     main-content                                 */
+
+  .main-content h1 {
+    margin-bottom: 0;
+  }
+
+  .main-nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-nav li{
+    padding: .5rem 1rem;
+  }
+
+  .main-nav ul li a {
+    background-color: inherit;
+  }
+
+  .main-content img {
+    float: right;
+    width: 30%;
+    margin: auto ;
+    margin-right: 2em;
+  }
+  .main-content p {
+    width: 60%;
+    text-align: left;
+    float: left;
+    margin-left: 2em;
+  }
+
+
+  /*     secondary-content                                */
+
+  .secondary-content li {
+    width: 45%;
+    display: inline-block;
+    margin: 0 auto;
+    vertical-align: top;
+  }
+
+
+    /*     contact-info                              */
+
+    .contact-info p {
+      width: 65%;
+      margin: 0 auto;
+    }
+
+    /*     footer                                 */
+
+    .mobile-nav {
+      display: none;
+    }
+
+    .bottom-main-nav {
+      display: flex;
+    }
+
+    .bottom-main-nav .bottom-name {
+      margin-right: auto;
+    }
+
+    .bottom-main-nav .bottom-nav-menu {
+      display: flex;
+    }
+    .bottom-main-nav .bottom-nav-menu li,
+    .bottom-main-nav .bottom-name li{
+      padding: .8rem;
+      margin-top: -.3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+
+/*     main-content                                */
+
+  .flex-container {
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+  }
+  .flex-container h1 {
+    margin-right: auto;
+  }
+
+  .main-content img {
+    width: 35%;
+    margin-right: 4em;
+  }
+
+  .main-content p {
+    width: 45%;
+    margin-left: 4em;
+  }
+
+/*     secondary-content                                */
+
+  .secondary-content li {
+    width: 30%;
+    margin: 0 auto;
+  }
+
+/*     contact-info                              */
+
+  .contact-info h4 {
+    margin-top: 4rem;
+  }
+}
