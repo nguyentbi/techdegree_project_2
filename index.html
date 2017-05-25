@@ -11,16 +11,14 @@
   <body>
     <header class="main-content clearfix" id="home">
       <div class="container">
-        <div class="flex-container">
+        <nav class='main-nav'>
           <h1><a href="index.html" id="name">Bi Nguyen</a></h1>
-          <nav class="main-nav">
-            <ul>
-              <li><a href="#home">HOME</a></li>
-              <li><a href="#portfolio">PORTFOLIO</a></li>
-              <li><a href="#contact">CONTACT</a></li>
-            </ul>
-          </nav>
-        </div>
+          <ul class="main-nav-menu">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
         <img src="img/responsive-layout-profile.png" alt="cartoon profile image">
         <p>Hi, I'm a front-end developer who love responsive design and css.
          I recently finished a degree in front-end development a Treehouse
@@ -75,17 +73,19 @@
       <ul>
         <li>Phone <a href="tel:1(111)555-1234"> 1(111)555-1234</a></li>
         <li>Email <a href="mailto:email@yoursite.com"> email@yoursite.com</a></li>
-    </ul>
+      </ul>
     </section>
-    <footer>
-      <nav class="mobile-nav">
-        <ul>
+    <footer class="container">
+      <nav class="bottom-mobile-nav">
+        <ul class='bottom-nav-name'>
           <li class='bottom-name'><a href="index.html">Bi Nguyen</a><li>
+        </ul>
+        <ul class="bottom-nav-menu">
           <li class='back-to-top'><a href="#top">Back To Top</a></li>
         </ul>
       </nav>
-      <nav class="bottom-main-nav">
-        <ul class='bottom-name'>
+      <nav class="bottom-destop-nav">
+        <ul class='bottom-nav-name'>
           <li><a href="index.html">Bi Nguyen</a></li>
         </ul>
         <ul class="bottom-nav-menu">
